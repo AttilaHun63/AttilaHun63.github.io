@@ -8,8 +8,29 @@ $(document).ready(function(){
         }else if($("#headercinput").val().toLowerCase() == "def"){
             $("#header").css("background", "rgb(100, 0, 255)");
         }else{
-
-            $("#header").css("background", $("#headercinput").val().toLowerCase());
+            var a;
+            switch($("#headercinput").val().toLowerCase()){
+                case "piros":
+                    a = "red";
+                    break;
+                case "kék":
+                    a = "blue";
+                    break;
+                case "zöld":
+                    a = "green";
+                    break;
+                case "lila":
+                    a = "purple";
+                    break;
+                case "sárga":
+                    a = "yellow";
+                    break;
+                case "cián":
+                    a = "cyan";
+                    break;
+            }
+            
+            $("#header").css("background", a);
             
         }
         
