@@ -9,7 +9,7 @@ $(document).ready(function(){
             $("#header").css("background", "rgb(100, 0, 255)");
         }else{
 
-            $("#header").css("background", $("#headercinput").val());
+            $("#header").css("background", $("#headercinput").val().toLowerCase());
             
         }
         
